@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/weaveworks/cortex/pkg/chunk/cache"
+	"github.com/cortexproject/cortex/pkg/chunk/cache"
 )
 
 type mockCache struct {

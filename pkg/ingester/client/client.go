@@ -11,8 +11,8 @@ import (
 	"google.golang.org/grpc"
 	_ "google.golang.org/grpc/encoding/gzip" // get gzip compressor registered
 
+	cortex_middleware "github.com/cortexproject/cortex/pkg/util/middleware"
 	"github.com/weaveworks/common/middleware"
-	cortex_middleware "github.com/weaveworks/cortex/pkg/util/middleware"
 )
 
 var ingesterClientRequestDuration = promauto.NewHistogramVec(prometheus.HistogramOpts{
